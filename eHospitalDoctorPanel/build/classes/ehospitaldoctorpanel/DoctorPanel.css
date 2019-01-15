@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-Dec-2018, 16:01:33
+    Author     : Andre Kelvin
+*/
+
+.button{
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-background-color: white;
+    -fx-border-color: red;
+    -fx-text-fill: red;
+}
+
+.button:focused {
+    -fx-background-color: white;
+    -fx-border-color: red;
+    -fx-text-fill: red;
+    -fx-border-radius: 5;
+}

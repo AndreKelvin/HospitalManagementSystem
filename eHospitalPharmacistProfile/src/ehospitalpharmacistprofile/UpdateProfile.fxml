@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="700.0" stylesheets="@Profile.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ehospitalpharmacistprofile.UpdateProfileController">
+   <children>
+      <BorderPane fx:id="bPane" prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <HBox prefHeight="23.0" prefWidth="700.0" styleClass="hbox" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="UPDATE PROFILE" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <VBox prefHeight="200.0" prefWidth="356.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTextField fx:id="textName" labelFloat="true" promptText="Name">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXDatePicker fx:id="datePicker" editable="false" prefHeight="25.0" prefWidth="356.0" promptText="Date Of Birth">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXDatePicker>
+                  <HBox prefHeight="21.0" prefWidth="356.0">
+                     <children>
+                        <Label text="Gender :" />
+                        <JFXRadioButton fx:id="radioM" text="M">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tgGender" />
+                           </toggleGroup>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="radioF" layoutX="49.0" layoutY="10.0" text="F" toggleGroup="$tgGender">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXRadioButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <JFXTextField fx:id="textAddress" labelFloat="true" layoutX="10.0" layoutY="10.0" promptText="Address">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="textCity" labelFloat="true" layoutX="10.0" layoutY="35.0" promptText="City">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="textPhone" labelFloat="true" layoutX="10.0" layoutY="60.0" promptText="Phone">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <HBox layoutX="10.0" layoutY="60.0" prefHeight="21.0" prefWidth="356.0">
+                     <children>
+                        <Label text="Marital Status :" />
+                        <JFXRadioButton fx:id="radioSingle" text="Single">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tg" />
+                           </toggleGroup>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="radioMar" layoutX="49.0" layoutY="10.0" text="Married" toggleGroup="$tg">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="radioDiv" layoutX="155.0" layoutY="10.0" text="Divorce" toggleGroup="$tg">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXRadioButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <JFXTextField fx:id="textEmail" labelFloat="true" layoutX="10.0" layoutY="85.0" promptText="Email">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="textDegree" labelFloat="true" layoutX="10.0" layoutY="110.0" promptText="Degree">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="5.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <BorderPane prefHeight="469.0" prefWidth="337.0" BorderPane.alignment="CENTER">
+               <center>
+                  <ImageView fx:id="imageView" fitHeight="336.0" fitWidth="288.0" onMouseClicked="#openFileChooserDialog" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ImageView>
+               </center>
+               <top>
+                  <Label text="Click On Image To Choose" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets top="50.0" />
+                     </BorderPane.margin>
+                  </Label>
+               </top>
+            </BorderPane>
+         </center>
+         <bottom>
+            <JFXButton onAction="#updateProfile" prefHeight="33.0" prefWidth="106.0" text="Update" BorderPane.alignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <BorderPane.margin>
+                  <Insets bottom="5.0" />
+               </BorderPane.margin>
+            </JFXButton>
+         </bottom>
+      </BorderPane>
+      <JFXSpinner fx:id="spinner" radius="30.0" visible="false" />
+   </children>
+</StackPane>

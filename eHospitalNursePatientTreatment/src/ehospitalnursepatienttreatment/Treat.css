@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18-Dec-2018, 15:23:31
+    Author     : Andre Kelvin
+*/
+
+.hbox{
+    -fx-background-color: red;
+}
+
+.table-view:focused {
+    -fx-border-color: red;
+}
+
+.table-row-cell:focused {
+    -fx-background-color: red;
+}
+
+.jfx-text-field{
+    -jfx-focus-color: red;
+}
+
+.list-view:focused .list-cell:focused {
+    -fx-background-color: red;
+}
+
+.jfx-list-view:focused {
+    -fx-border-color: red;
+}
+
+.list-view:focused {
+    -fx-border-color: red;
+}

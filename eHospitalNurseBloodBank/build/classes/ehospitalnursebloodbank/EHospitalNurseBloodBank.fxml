@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="765.0" stylesheets="@BloodBank.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ehospitalnursebloodbank.EHospitalNurseBloodBankController">
+   <children>
+      <JFXTabPane>
+         <tabs>
+            <Tab text="Blood Group">
+               <content>
+                  <BorderPane fx:id="bPaneBloodGroup" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="1364.0">
+                     <center>
+                        <TableView fx:id="tableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <columns>
+                              <TableColumn fx:id="columnBlood" prefWidth="75.0" text="Blood Group" />
+                              <TableColumn fx:id="columnBags" prefWidth="75.0" text="Total Bags" />
+                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </center></BorderPane>
+               </content>
+            </Tab>
+            <Tab text="Blood Donor">
+               <content>
+                  <BorderPane fx:id="bPaneBloodDonor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                     <center>
+                        <TableView fx:id="tableViewDonor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <columns>
+                              <TableColumn fx:id="columnID" prefWidth="75.0" text="ID" />
+                              <TableColumn fx:id="columnName" prefWidth="75.0" text="Name" />
+                              <TableColumn fx:id="columnAge" prefWidth="75.0" text="Age" />
+                              <TableColumn fx:id="columnSex" prefWidth="75.0" text="Sex" />
+                              <TableColumn fx:id="columnBloodGroup" prefWidth="75.0" text="Blood Group" />
+                              <TableColumn fx:id="columnDonationDate" prefWidth="75.0" text="Donation Date" />
+                              <TableColumn fx:id="columnPhone" prefWidth="75.0" text="Phone" />
+                              <TableColumn fx:id="columnEmail" prefWidth="75.0" text="Email" />
+                              <TableColumn fx:id="columnAddress" prefWidth="75.0" text="Address" />
+                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </center></BorderPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</StackPane>

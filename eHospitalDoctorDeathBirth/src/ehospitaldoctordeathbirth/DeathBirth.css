@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12-Dec-2018, 16:52:11
+    Author     : Andre Kelvin
+*/
+
+.jfx-tab-pane .tab-header-area .tab-selected-line {
+    -fx-background-color: white;
+}
+
+.tab-header-background {
+    -fx-background-color: red;
+}
+
+.jfx-text-field{
+    -jfx-focus-color: red;
+}
+
+.list-view:focused .list-cell:focused {
+    -fx-background-color: red;
+}
+
+.jfx-list-view:focused {
+    -fx-border-color: red;
+}

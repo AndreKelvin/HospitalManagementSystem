@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="600.0" stylesheets="@Profile.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ehospitalpharmacistprofile.EditAccountController">
+   <children>
+      <VBox fx:id="vBox" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox prefHeight="26.0" prefWidth="600.0" styleClass="hbox">
+               <children>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="EDIT ACCOUNT" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <JFXTextField fx:id="textUsername" labelFloat="true" promptText="Username">
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <StackPane prefHeight="26.0" prefWidth="600.0">
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <JFXTextField fx:id="textPassUnMask" labelFloat="true" promptText="Password" />
+                  <JFXPasswordField fx:id="password" labelFloat="true" promptText="Password" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="210.0" layoutY="101.0" prefHeight="26.0" prefWidth="600.0">
+               <children>
+                  <JFXTextField fx:id="textNewPassUnMask" labelFloat="true" promptText="New Password" />
+                  <JFXPasswordField fx:id="newPassword" labelFloat="true" promptText="New Password" />
+               </children>
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" top="20.0" />
+               </VBox.margin>
+            </StackPane>
+            <StackPane layoutX="10.0" layoutY="127.0" prefHeight="26.0" prefWidth="600.0">
+               <children>
+                  <JFXTextField fx:id="textConfirmNewPassUnMask" labelFloat="true" promptText="Confirm New Password" />
+                  <JFXPasswordField fx:id="confrimNewPassword" labelFloat="true" promptText="Confirm New Password" />
+               </children>
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" top="20.0" />
+               </VBox.margin>
+            </StackPane>
+            <JFXCheckBox fx:id="checkBox" onAction="#showOrHidePassword" text="Show/Hide Password">
+               <VBox.margin>
+                  <Insets left="200.0" top="20.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXCheckBox>
+            <BorderPane>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <center>
+                  <JFXButton onAction="#editAccount" prefHeight="25.0" prefWidth="117.0" text="Edit">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </center>
+            </BorderPane>
+         </children>
+      </VBox>
+      <JFXSpinner fx:id="spinner" radius="30.0" visible="false" />
+   </children>
+</StackPane>

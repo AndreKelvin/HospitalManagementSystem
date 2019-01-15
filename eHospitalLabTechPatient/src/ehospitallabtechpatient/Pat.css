@@ -1,0 +1,17 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-Dec-2018, 22:22:54
+    Author     : Andre Kelvin
+*/
+
+.table-view:focused {
+    -fx-border-color: red;
+}
+
+.table-row-cell:focused {
+    -fx-background-color: red;
+}

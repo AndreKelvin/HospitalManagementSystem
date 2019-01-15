@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1311.0" stylesheets="@Phar.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ehospitalpharmacistpanel.EHospitalPharmacistPanelController">
+   <children>
+      <BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0">
+         <left>
+            <VBox prefHeight="604.0" prefWidth="192.0" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane prefWidth="192.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#openDrugModule" prefHeight="50.0" prefWidth="136.0" text="DRUG">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                           <image>
+                              <Image url="@icon/tablets_3-128%20(2018_09_26%2007_59_24%20UTC).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <StackPane VBox.vgrow="ALWAYS">
+                     <children>
+                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#openReportModule" prefHeight="50.0" prefWidth="136.0" text="REPORT">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <ImageView fitHeight="35.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                           <image>
+                              <Image url="@icon/Document_black-128.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                     <children>
+                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#openPatientTreatmentModule" prefHeight="50.0" prefWidth="136.0" text="TREATMENT">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <ImageView fitHeight="35.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                           <image>
+                              <Image url="@icon/14-128.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <StackPane VBox.vgrow="ALWAYS">
+                     <children>
+                        <JFXButton fx:id="buttonTheme" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#openThemeModule" prefHeight="50.0" prefWidth="136.0" text="THEME">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                           <image>
+                              <Image url="@icon/glyph-88-128.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="10.0" layoutY="422.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                     <children>
+                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#openProfileModule" prefHeight="50.0" prefWidth="136.0" text="PROFILE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                           <image>
+                              <Image url="@icon/profile-128.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                     <children>
+                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#logOut" prefHeight="50.0" prefWidth="136.0" text="LOGOUT">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <ImageView fitHeight="25.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                           <image>
+                              <Image url="@icon/logout-1-128.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</StackPane>

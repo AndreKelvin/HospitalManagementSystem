@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01-Dec-2018, 21:31:23
+    Author     : Andre Kelvin
+*/
+
+.hbox{
+    -fx-background-color: red;
+}
+
+.jfx-text-field{
+    -jfx-focus-color: red;
+}
+
+.jfx-password-field{
+    -jfx-focus-color: red;
+}
+
+.button{
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-background-color: white;
+    -fx-border-color: red;
+    -fx-text-fill: red;
+    -fx-border-radius: 5;
+}
+
+.button:focused {
+    -fx-background-color: white;
+    -fx-border-color: red;
+    -fx-text-fill: red;
+    -fx-border-radius: 5;
+}
+
+.jfx-radio-button{
+    -jfx-selected-color: red;
+}
+
+.jfx-check-box {
+    -jfx-checked-color: red;
+}
+
+.combo-box-popup .list-cell:filled:hover {
+    -fx-background-color: red;
+}
+
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: red;
+}
+
+.combo-box{
+    -jfx-focus-color: red;
+}
